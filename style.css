@@ -5,43 +5,28 @@
     box-sizing: border-box;
     font-family: poppins;
     font-weight: 600;
-    font-size:large;
     color: white;
 }
 
 body{
-    background-color: rgb(255, 31, 76); 
+    background-color: rgb(255, 69, 110); 
 }
 header{
     background-color: white;
     width: 100%;
 }
-.navbar{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 70px;
-    
-}
-.nav-list p,.brand p{
-    color: black;
-}
-.nav-list{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-right: 10%;
-    
-}
+
 .brand{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 5%;
     gap: 10px;
+    height: 80px;
 }
 .brand p{
     font-size: 1.7rem;
+    color:black;
 }
 .brand>img{
     height: 50px;
@@ -81,6 +66,9 @@ header{
     display: grid;
     grid-template-columns: auto auto;
 }
+.intro2{
+    margin-top: 100px;
+}
 .intro2 p{
     font-size: 50px;
 }
@@ -91,7 +79,7 @@ header{
     grid-column-start: 2;
     
 }
-.intro2-2 .quote2{
+.quote2{
     font-size: 50px;
     text-shadow: 2px 2px 10px rgb(251, 255, 0), 5px 4px 20px rgba(72, 255, 0, 0.15);
 }
@@ -132,4 +120,23 @@ header{
     border-radius: 50px;
     background-color: rgb(0, 255, 200);
     text-decoration: none;
+}
+.contact{
+    background-color: rgb(53, 3, 3);
+    text-align: center;
+    padding: 15px;
+}
+.chat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+@media (max-width:720px){
+    
 }
