@@ -149,7 +149,7 @@ header{
     justify-content: center;
     gap: 50px;
 }
-@media (max-width:480px){
+@media (max-width:720px){
     *{
         padding: 0px;
         margin: 0px;
