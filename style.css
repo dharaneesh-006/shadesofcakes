@@ -25,15 +25,26 @@ header{
     height: 80px;
 }
 .brand p{
-    font-size: 1.7rem;
+    font-size: 50px;
     color:black;
 }
 .brand>img{
     height: 50px;
+
+}
+.imge{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 100%; /* adjust to your needs */
+    height: auto;
 }
 .section1 .imge img{
     height: 570px;
-    position: absolute;
+    
+    
 }
 .intro .intro-txt{
     width: auto;
@@ -45,12 +56,7 @@ header{
     position: relative;
     text-align: center;
 }
-.imge{
-    position: absolute;
-    top: 10%;
-    display: flex;
-    left: 30%;
-}
+
 .intro-span{
     font-size: 200px;
     position: relative;
@@ -101,6 +107,9 @@ header{
     grid-column-start: 1;
     grid-column-end: 4;
 }
+.quote3{
+    font-size: 80px;
+}
 .cakes{
     padding: 0;
     margin: 0px;
@@ -113,6 +122,9 @@ header{
 }
 .cakes img:hover{
     transform: scale(1.1);
+}
+.deli{
+    font-size: 30px;
 }
 .order{
     color: rgb(0, 0, 0);
@@ -137,6 +149,86 @@ header{
     justify-content: center;
     gap: 50px;
 }
-@media (max-width:720px){
-    
+@media (max-width:480px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .brand p{
+        font-size: 25px;
+    }
+    .name{
+        display: none;
+    }
+    .intro .intro-txt{
+        width: auto;
+        font-size: 40px;
+    }
+    .section1 .imge img{
+        height: 400px;
+
+    }
+    .imge{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        max-width: 100%; /* adjust to your needs */
+        height: auto;
+    }
+    .intro-span{
+        font-size: 100px;
+    }
+    .intro2 p{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .section2{
+        
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows:auto;
+    }
+    .intro2-1{
+        display: grid;
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    .section3{
+        margin-bottom: 50px;
+    }
+    .section3 .intro3 {
+        grid-column-start: 1;
+    }
+    .quote3{
+        font-size: 28px;
+        margin: 0px;
+        padding: 10px;
+    }
+    .deli{
+        font-size: 20px;
+    }
+    .section4 {
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+    .cakes img {
+        height: 200px;
+        transition: 0.5s ease all;
+        width: 100%;
+        padding: 10px;
+    }
+    .chat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+    }
+    .contactus{
+        display:list-item;
+        
+    }
 }
