@@ -32,6 +32,9 @@ header{
     height: 50px;
 
 }
+.section1{
+    
+}
 .imge{
     position: relative;
     top: 10%;
@@ -149,7 +152,7 @@ header{
     justify-content: center;
     gap: 50px;
 }
-@media (max-width:480px){
+@media only screen and (min-width:240px) and (max-width:600px){
     *{
         padding: 0px;
         margin: 0px;
@@ -166,17 +169,14 @@ header{
     }
     .section1 .imge img{
         height: 400px;
-        
+        margin-bottom: 0px;
     }
+   
     .imge{
         position: relative;
         top: 50%;
         left: 35%;
         transform: translate(-50%, -50%);
-        width: 50%;
-        max-width: 100%; /* adjust to your needs */
-        height: auto;
-        
     }
     .intro-span{
         font-size: 100px;
